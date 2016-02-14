@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Обработка имени файла</title>
+  </head>
+  <body>
+    <h2>Загрузка файла</h2>
+
+<form method="post" enctype='multipart/form-data' action="{{ path('test_page3') }}">
+    Выберите файл:
+    <input type='file' name='filename' size='10' /><br /><br />
+    <input type='submit' value='Загрузить' />
+</form>
+
+Имя загруженного пользователем файла: {{ oldname }} <br>
+Преобразованное имя файла: {{ newname }} <br>
+
+
+<br>
+<a href="{{ path('test_homepage') }}">Содержание</a>
+
+
+
+  </body>
+</html>

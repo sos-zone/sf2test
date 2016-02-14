@@ -1,0 +1,20 @@
+test_homepage:
+    path:     /
+    defaults: { _controller: TestBundle:Default:index }
+
+test_page1:
+    path:     /page1
+    defaults: { _controller: TestBundle:Default:page1 }
+
+test_page2_1:
+    path:     /page2_1
+    defaults: { _controller: TestBundle:Default:page2_1 }
+
+test_page2_2:
+    path:     /page2_2
+    defaults: { _controller: TestBundle:Default:page2_2 }
+
+
+test_page3:
+    path:     /page3
+    defaults: { _controller: TestBundle:Default:page3 }
