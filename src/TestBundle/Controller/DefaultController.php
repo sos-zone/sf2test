@@ -16,7 +16,7 @@ class DefaultController extends Controller
 
     public function page1Action()
     {
-        $content = file($_SERVER['SCRIPT_FILENAME']);
+        $content = file($_SERVER['DOCUMENT_ROOT'].'/src/TestBundle/Controller/DefaultController.php');
 
         return $this->render('TestBundle:Default:page1.html.twig',
                              array('content' => $content,)
